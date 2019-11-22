@@ -440,6 +440,7 @@ p {
     .sticky .top-nav__links {
       -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
+	    grid-template-rows: min-content;
       grid-row-gap: 0; } }
 
 @media only screen and (max-width: 37.5em) {
