@@ -198,6 +198,8 @@ p {
   background-image: url(../img/hero.jpg);
   background-attachment: fixed;
   background-position: center;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
   background-size: cover;
   display: -ms-grid;
   display: grid;
