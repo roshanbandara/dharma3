@@ -195,7 +195,7 @@ p {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero.jpg);
+  background-image: url(../img/hero.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -210,10 +210,10 @@ p {
       -ms-grid-rows: 1fr -webkit-min-content;
       -ms-grid-rows: 1fr min-content;
       grid-template-rows: 1fr -webkit-min-content;
-      grid-template-rows: 1fr min-content;
+      grid-template-rows: 1fr min-content;/*
       background-image: -webkit-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero_mobile.jpg);
       background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero_mobile.jpg);
-      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero_mobile.jpg); } }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero_mobile.jpg); */} }
 
 /*nav============================================================================================================================*/
 .top-nav {
