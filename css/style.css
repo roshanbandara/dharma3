@@ -196,6 +196,7 @@ p {
 .header {
   height: 100vh;
   background-image: url(../img/hero.jpg);
+	background-attachment: fixed;
   background-position: center;
   background-size: cover;
   display: -ms-grid;
