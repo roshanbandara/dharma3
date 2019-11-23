@@ -223,7 +223,6 @@ p {
   -ms-grid-columns: min-content 1fr;
   grid-template-columns: -webkit-min-content 1fr;
   grid-template-columns: min-content 1fr;
-	 grid-template-rows: min-content;
   /*
      .wrapper { Get this from stackoverflow, to make a border around the nave item. there are few but this shadow effect was perfect - https://stackoverflow.com/questions/47882924/preventing-double-borders-in-css-grid
           display: grid;
@@ -372,7 +371,7 @@ p {
 
 /*sticky navi*/
 .sticky {
-/* 	 grid-template-rows: min-content; */
+	 grid-template-rows: min-content;
   position: fixed;
   width: 100%;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
