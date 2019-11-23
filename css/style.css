@@ -371,6 +371,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.
 
 /*sticky navi*/
 .sticky {
+	 grid-template-rows: min-content;
   position: fixed;
   width: 100%;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
@@ -456,7 +457,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.
   .sticky .top-nav__link-box a i {
     font-size: 3.8rem;
     padding-bottom: 0; } }
-
+/*
 @media only screen and (max-width: 37.5em) {
   .sticky .top-nav {
     grid-template-columns: 1fr;
@@ -465,7 +466,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.
 
 @media only screen and (max-width: 37.5em) {
   .sticky .top-nav__logo-box {
-    display: none; } }
+    display: none; } }*/
 /*nav end============================================================================================================================*/
 .main-heading {
   padding: 0 5vw;
