@@ -244,7 +244,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.
       -ms-grid-rows: min-content 1fr;
       grid-template-rows: -webkit-min-content 1fr;
       grid-template-rows: min-content 1fr;
-      height: auto; }
+      /*height: auto;*/ }
     .top-nav > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1; }
