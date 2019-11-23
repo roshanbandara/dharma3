@@ -223,6 +223,7 @@ p {
   -ms-grid-columns: min-content 1fr;
   grid-template-columns: -webkit-min-content 1fr;
   grid-template-columns: min-content 1fr;
+	 grid-template-rows: min-content;
   /*
      .wrapper { Get this from stackoverflow, to make a border around the nave item. there are few but this shadow effect was perfect - https://stackoverflow.com/questions/47882924/preventing-double-borders-in-css-grid
           display: grid;
