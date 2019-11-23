@@ -386,6 +386,10 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.
     .sticky {
       min-height: auto; } }
 
+ @media only screen and (max-width: 37.5em) {
+    .sticky {
+      max-height: 5rem; } }
+
 /*backdrop filter==============================================================================================================*/
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
   .sticky {
