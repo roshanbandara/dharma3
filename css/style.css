@@ -236,9 +236,6 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.
           box-shadow: 0 0 0 1px;
           }
      */ }
-@media only screen and (max-width: 37.5em) {
-    .sticky {
-      grid-template-rows: min-content; } }
 
   @media only screen and (max-width: 37.5em) {
     .top-nav {
@@ -394,6 +391,10 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.
  @media only screen and (max-width: 37.5em) {
     .sticky {
       max-height: 5rem; } }*/
+
+@media only screen and (max-width: 37.5em) {
+    .sticky {
+      grid-template-rows: min-content; } }
 
 /*backdrop filter==============================================================================================================*/
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
