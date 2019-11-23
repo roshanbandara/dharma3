@@ -195,7 +195,7 @@ p {
 
 .header {
   height: 100vh;
-  background-image: center fixed/cover url("../img/hero.jpg");
+  background-image: center fixed/cover url(../img/hero.jpg);
 /* 	background-attachment: fixed; */
 /*   background-position: center; */
 /*   background-size: cover; */
