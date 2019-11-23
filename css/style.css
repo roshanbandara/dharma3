@@ -456,9 +456,12 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.
 @media only screen and (max-width: 37.5em) {
   .sticky .top-nav {
     grid-template-columns: 1fr;
-	  grid-template-rows: min-content;
+    grid-template-rows: min-content;
     height: auto; } }
 
+@media only screen and (max-width: 37.5em) {
+  .sticky .top-nav__logo-box {
+    display: none; } }
 /*nav end============================================================================================================================*/
 .main-heading {
   padding: 0 5vw;
