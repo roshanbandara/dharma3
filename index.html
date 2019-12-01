@@ -5,12 +5,13 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="Description" content="prith, gatha, pansil, buduguna, sangaguna, dahamguna, wandami chethiyan sabban, පන්සිල්, බුදුගුණ, සඟගුණ, දහම්ගුණ, චෛත්‍ය වන්දනාව, වන්දාමි චෙතියං සබ්බං">
       <!-- <meta name="description" content="Flexible Slide-to-top Accordion" /> -->
       <!-- <meta name="keywords" content="accordion, jquery, flexible, responsive, slide to top, tabs, UI, web design" /> -->
       <!-- <meta name="author" content="Codrops" /> -->
       <!-- roshan -->
       <!-- <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,600&display=swap" rel="stylesheet"> -->
-      <script src="https://kit.fontawesome.com/107398867c.js" crossorigin="anonymous"></script>
+      <!-- <script src="https://kit.fontawesome.com/107398867c.js" crossorigin="anonymous" async></script> -->
       <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> -->
       <!-- <link rel="shortcut icon" href="../favicon.ico"> -->
 
@@ -58,7 +59,7 @@
 
       <header class="header" id="header">
          <nav class="top-nav">
-             <div class="top-nav__logo-box">
+             <div class="top-nav__logo-box roshan">
                  <a href="#header"><img src="img/white-ashoka-chakra.png" alt="Dharma Chakra" class="top-nav__logo"></a> <!-- roshan - modified by me to make the logo as fuction as home button-->
                  <a href="#header"><img src="img/black-ashoka-chakra.png" alt="Omnifood logo" class="top-nav__logo-black"></a>
              </div>
@@ -67,25 +68,36 @@
                       <!-- roshan also icons by me-->
                      <div class="top-nav__link">
                          <a href="#header">
-                             <span><i class="fa fa-home"></i></span>
-                             <span class="link-text"> නිවස</span> 
+                             <span>
+                                <!-- <i class="fa fa-home"></i> -->
+                                 <svg class="fa fa-home">
+                                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                                 </svg>
+
+                              </span>
+                             <span class="link-text">&nbsp;නිවස</span> 
                          </a>
                      </div> <!-- roshan also icons by me-->
                  </div>
                  <div class="top-nav__link-box">                  
-                     <div class="top-nav__link"><a href="#gatha"><span><i class="fas fa-dharmachakra"></i></span><span class="link-text">&nbsp;ගාථා</span></a></div>
+                     <div class="top-nav__link"><a href="#gatha"><span><!--<i class="fas fa-dharmachakra"></i>-->
+                        <svg class="fa fa-home">
+                           <use xlink:href="img/sprite.svg#icon-menu_book"></use>
+                        </svg>
+                     </span><span class="link-text">&nbsp;ගාථා</span></a></div>
                  </div>
                  <div class="top-nav__link-box">                       
-                     <div class="top-nav__link"><a href="#pirith"><span><i class="fas fa-dharmachakra"></i></span><span class="link-text">&nbsp;පිරිත්</span></a></div>
+                     <div class="top-nav__link"><a href="#pirith"><span><!--<i class="fas fa-dharmachakra"></i>--><svg class="fa fa-home"> <use xlink:href="img/sprite.svg#icon-menu_book"></use></svg></span><span class="link-text">&nbsp;පිරිත්</span></a></div>
                  </div>
                  <div class="top-nav__link-box">                        
-                     <div class="top-nav__link"><a href="#about"><span><i class="fas fa-address-card"></i></span><span class="link-text">&nbsp;අපගැන</span></a></div>
+                     <div class="top-nav__link"><a href="#about"><span><!--<i class="fas fa-address-card"></i>--><svg class="fa fa-home"><use xlink:href="img/sprite.svg#icon-info"></use>
+                     </svg></span><span class="link-text">&nbsp;අපගැන</span></a></div>
                  </div>    
                  <div class="top-nav__link-box">                          
-                     <div class="top-nav__link"><a href="#contact"><span><i class="fas fa-envelope"></i></span><span class="link-text">&nbsp;අමතන්න</span></a></div>
+                     <div class="top-nav__link"><a href="#contact"><span><!--<i class="fas fa-envelope"></i>--><svg class="fa fa-home"><use xlink:href="img/sprite.svg#icon-emailmailmarkunreadlocal_post_office"></use></svg></span><span class="link-text">&nbsp;අමතන්න</span></a></div>
                  </div>    
                  <div class="top-nav__link-box">                  
-                     <div class="top-nav__link"><a href="#plans"><span><i class="fas fa-user-plus"></i></span><span class="link-text">&nbsp;ලියාපදිංචිය</span></a></div>
+                     <div class="top-nav__link"><a href="#plans"><span><!--<i class="fas fa-user-plus"></i>--> <svg class="fa fa-home"><use xlink:href="img/sprite.svg#icon-person_add"></use></svg></span><span class="link-text">&nbsp;ලියාපදිංචිය</span></a></div>
                  </div>
          </div>
          <!-- <a class="mobile-nav-icon js--nav-icon"><i class="fas fa-bars"></i></a> -->
@@ -101,6 +113,7 @@
              </div> -->
          </div>    
      </header>
+     <main role="main">
       
       <div class="container">
          <div class="wrapper">
@@ -112,16 +125,16 @@
                      <li>
                         <a href="#">නමස්කාරය<span class="st-arrow">Open or Close</span></a>
                         <div class="st-content" >
-                           <p>නමෝතස්ස භගවතෝ අරහතෝ සම්මාසම්බුද්ධස්ස<br>
-                              නමෝතස්ස භගවතෝ අරහතෝ සම්මාසම්බුද්ධස්ස<br>
-                              නමෝතස්ස භගවතෝ අරහතෝ සම්මාසම්බුද්ධස්ස
+                           <p>නමෝතස්ස භගවතෝ අරහතෝ සම්මාසම්බුද්ධස්ස&excl;<br>
+                              නමෝතස්ස භගවතෝ අරහතෝ සම්මාසම්බුද්ධස්ස&excl;<br>
+                              නමෝතස්ස භගවතෝ අරහතෝ සම්මාසම්බුද්ධස්ස&excl;
                            </p>
                         </div>
                      </li>
                      <li>
                         <a href="#">තෙරුවන් සරණ යාම<span class="st-arrow">Open or Close</span></a>
                         <div class="st-content">
-                           <p >බුද්ධං සරණං ගච්ඡාමි<br>
+                           <p>බුද්ධං සරණං ගච්ඡාමි<br>
                               ධම්මං සරණං ගච්ඡාමි<br>
                               සංඝං සරණං ගච්ඡාමි
                            </p>
@@ -140,38 +153,38 @@
                      <li>
                         <a href="#">පන්සිල් සමාදන් වීම<span class="st-arrow">Open or Close</span></a>
                         <div class="st-content">
-                           <p>පාණාතිපාතා වේරමණි සික්ඛා පදං සමාදියාමි.</br>
-                              අදින්නාදානා වේරමණී සික්ඛාපදං සමාදියාමි.</br>
-                              කාමේසු මිච්ඡාචාරා වේරමණී සික්ඛාපදං සමාදියාමි.</br>
-                              මුසාවාදා වේරමණී සික්ඛාපදං සමාදියාමි.</br>
-                              සුරාමේරය මජ්ජපමාදට්ඨානා වේරමණී සික්ඛා පදං සමාදියාමි.
+                           <p>1. පාණාතිපාතා වේරමණි සික්ඛා පදං සමාදියාමි.</br>
+                              2. අදින්නාදානා වේරමණී සික්ඛාපදං සමාදියාමි.</br>
+                              3. කාමේසු මිච්ඡාචාරා වේරමණී සික්ඛාපදං සමාදියාමි.</br>
+                              4. මුසාවාදා වේරමණී සික්ඛාපදං සමාදියාමි.</br>
+                              5. සුරාමේරය මජ්ජපමාදට්ඨානා වේරමණී සික්ඛා පදං සමාදියාමි.
                            </p>
                         </div>
                      </li>
                      <li>
                         <a href="#">බුදුගුණ සිහි කිරීම<span class="st-arrow">Open or Close</span></a>
                         <div class="st-content">
-                           <p>ඉතිපි සෝ භගවා අරහං &#8211; සම්මාසම්බුද්ධෝ &#8211; විජ්ජාචරණසම්පන්නෝ &#8211;<br>සුගතෝ &#8211;<br>ලෝකවිදූ &#8211; අනුත්තරෝ&nbsp;පුරිසදම්මසාරථී &#8211; සත්ථා&nbsp;දේව&nbsp;මනුස්සානං &#8211;<br>බුද්ධෝ &#8211;<br>භගවාති.</p>
+                           <p>ඉතිපි සෝ භගවා අරහං &#8211; සම්මාසම්බුද්ධෝ &#8211; විජ්ජාචරණසම්පන්නෝ &#8211; සුගතෝ &#8211; ලෝකවිදූ &#8211; අනුත්තරෝ&nbsp;පුරිසදම්මසාරථී &#8211; සත්ථා&nbsp;දේව&nbsp;මනුස්සානං &#8211; බුද්ධෝ &#8211; භගවාති.</p>
                         </div>
                      </li>
                      <li>
                         <a href="#">දහම්ගුණ සිහි කීරීම<span class="st-arrow">Open or Close</span></a>
                         <div class="st-content">
-                           <p>ස්වක්ඛාතෝ භගවතා ධම්මෝ – සන්දිට්ඨිකෝ – අකාලිකෝ – ඒහි&nbsp;පස්සිකෝ – ඕපනයිකෝ – පච්චත්තං වේදිතබ්බෝ විඤ්ඤුහි</p>
+                           <p>ස්වක්ඛාතෝ භගවතා ධම්මෝ &#8211; සන්දිට්ඨිකෝ &#8211; අකාලිකෝ &#8211; ඒහි&nbsp;පස්සිකෝ &#8211; ඕපනයිකෝ &#8211; පච්චත්තං වේදිතබ්බෝ විඤ්ඤුහි</p>
                         </div>
                      </li>
                      <li>
                         <a href="#">සඟගුණ සිහි කිරීම<span class="st-arrow">Open or Close</span></a>
                         <div class="st-content">
-                           <p>සුපටිපන්නෝ භගවතෝ සාවකසංඝෝ –<br>
-                              උජුපටිපන්නෝ භගවතෝ සාවකසංඝෝ –<br>
-                              ඤායපටිපන්නෝ භගවතෝ සාවකසංඝෝ –<br>
-                              සාමීචිපටිපන්නෝ භගවතෝ සාවකසංඝෝ –<br>
-                              යදිදං චත්තාරි පුරිසයුගානි –<br>
-                              අට්ඨපුරිස පුග්ගලා –<br>
-                              ඒස භගවතෝ සාවකසංඝෝ –<br>
-                              ආහුනෙය්‍යො, පාහුනෙය්‍යො –<br> 
-                              දක්ඛිණෙය්‍යො – අඤ්ජලිකරණීයෝ –<br>
+                           <p>සුපටිපන්නෝ භගවතෝ සාවකසංඝෝ &#8211;<br>
+                              උජුපටිපන්නෝ භගවතෝ සාවකසංඝෝ &#8211;<br>
+                              ඤායපටිපන්නෝ භගවතෝ සාවකසංඝෝ &#8211;<br>
+                              සාමීචිපටිපන්නෝ භගවතෝ සාවකසංඝෝ &#8211;<br>
+                              යදිදං චත්තාරි පුරිසයුගානි &#8211;<br>
+                              අට්ඨපුරිස පුග්ගලා &#8211;<br>
+                              ඒස භගවතෝ සාවකසංඝෝ &#8211;<br>
+                              ආහුනෙය්‍යො, පාහුනෙය්‍යො &#8211;<br> 
+                              දක්ඛිණෙය්‍යො &#8211; අඤ්ජලිකරණීයෝ &#8211;<br>
                               අනුත්තරං පුඤ්ඤක්ඛෙත්තං ලෝකස්ස
                            </p>
                         </div>
@@ -194,24 +207,24 @@
                               පත්තෝ සබ්බඤ්ඤුතං සත්ථා<br>
                               වන්දේ තං බෝධි පාදං
                            </p>
-                           <p>ඉමේ ඒතේ මහාබෝධී –<br>ලෝකනාථේන පූජිතා<br>
-                              අහම්පි තේ නමස්සාමි –<br>බෝධි රාජා නමත්ථුතේ
+                           <p>ඉමේ ඒතේ මහාබෝධී &#8211;<br>ලෝකනාථේන පූජිතා<br>
+                              අහම්පි තේ නමස්සාමි &#8211;<br>බෝධි රාජා නමත්ථුතේ
                            </p>
                         </div>
                      </li>
                      <li>
                         <a href="#">පහන් පූජාව<span class="st-arrow">Open or Close</span></a>
                         <div class="st-content">
-                           <p>ඝනසාරප්ප දිත්තේන –<br>දීපෙන තම ධංසිනා<br>
-                              තිලෝක දීපං සම්බුද්ධං –<br>පූජයාමි තමෝනුදං
+                           <p>ඝනසාරප්ප දිත්තේන &#8211;<br>දීපෙන තම ධංසිනා<br>
+                              තිලෝක දීපං සම්බුද්ධං &#8211;<br>පූජයාමි තමෝනුදං
                            </p>
                         </div>
                      </li>
                      <li>
                         <a href="#">සුවඳ දුම් පූජාව<span class="st-arrow">Open or Close</span></a>
                         <div class="st-content">
-                           <p>සුගන්ධිකාය වදනං –<br>අනන්ත ගුණ ගන්ධිනං<br>
-                              සුගන්ධිනා හං ගන්ධේන –<br>පූජයාමී තථාගතං
+                           <p>සුගන්ධිකාය වදනං &#8211;<br>අනන්ත ගුණ ගන්ධිනං<br>
+                              සුගන්ධිනා හං ගන්ධේන &#8211;<br>පූජයාමී තථාගතං
                            </p>
                         </div>
                      </li>
@@ -234,32 +247,32 @@
                      <li>
                         <a href="#">පැන් පූජාව<span class="st-arrow">Open or Close</span></a>
                         <div class="st-content">
-                           <p>අධිවාසේතු නෝ භන්තේ –<br>පානීයං පරිකප්පිතං<br>
-                              අනුකම්පං උපාදාය –<br>පත්ගණහාතුමුත්තම
+                           <p>අධිවාසේතු නෝ භන්තේ &#8211;<br>පානීයං පරිකප්පිතං<br>
+                              අනුකම්පං උපාදාය &#8211;<br>පත්ගණහාතුමුත්තම
                            </p>
                         </div>
                      </li>
                      <li>
                         <a href="#">ආහාර පූජාව<span class="st-arrow">Open or Close</span></a>
                         <div class="st-content">
-                           <p>අධිවාසේතු නෝ භන්තේ –<br>භෝජනං පරිකප්පිතං<br>
-                              අනුකම්පං උපාදාය –<br>පතිගණ්හාතුමුත්තම
+                           <p>අධිවාසේතු නෝ භන්තේ &#8211;<br>භෝජනං පරිකප්පිතං<br>
+                              අනුකම්පං උපාදාය &#8211;<br>පතිගණ්හාතුමුත්තම
                            </p>
                         </div>
                      </li>
                      <li>
                         <a href="#">ගිලන්පස පූජාව<span class="st-arrow">Open or Close</span></a>
                         <div class="st-content">
-                           <p>අධිවාසේතු නෝ භන්තේ –<br>ගිලාන පච්චයං ඉමං<br>
-                              අනුකම්පං උපාදාය –<br>පතිගණ්හාතුමුත්තම
+                           <p>අධිවාසේතු නෝ භන්තේ &#8211;<br>ගිලාන පච්චයං ඉමං<br>
+                              අනුකම්පං උපාදාය &#8211;<br>පතිගණ්හාතුමුත්තම
                            </p>
                         </div>
                      </li>
                      <li>
                         <a href="#">දැහැත් පූජාව<span class="st-arrow">Open or Close</span></a>
                         <div class="st-content">
-                           <p>නාගවල්ලී දලූපේතං –<br>චුණ්ණ පූග සමායුතං<br>
-                              තාම්බූලං පත්ගණ්හාතු –<br>සතං පූජේමිදං ජිනො
+                           <p>නාගවල්ලී දලූපේතං &#8211;<br>චුණ්ණ පූග සමායුතං<br>
+                              තාම්බූලං පත්ගණ්හාතු &#8211;<br>සතං පූජේමිදං ජිනො
                            </p>
                         </div>
                      </li>
@@ -306,16 +319,16 @@
                               සබ්බසම්පත්ති සිද්ධියා
                            </p>
                            <p>
-                              ආකාසට්ඨා ච භුම්මට්ඨා –<br>දෙවා නාගා මහිධිකා<br>
-                              පුඤ්ඤං තං අනුමොදිත්වා –<br>චිරං රක්ඛන්තු සාසනං
+                              ආකාසට්ඨා ච භුම්මට්ඨා &#8211;<br>දෙවා නාගා මහිධිකා<br>
+                              පුඤ්ඤං තං අනුමොදිත්වා &#8211;<br>චිරං රක්ඛන්තු සාසනං
                            </p>
                            <p>    
-                              ආකාසට්ඨා ච භුම්මට්ඨා –<br>දෙවා නාගා මහිධිකා<br>
-                              පුඤ්ඤං තං අනුමොදිත්වා –<br>චිරං රක්ඛන්තු දෙසනං
+                              ආකාසට්ඨා ච භුම්මට්ඨා &#8211;<br>දෙවා නාගා මහිධිකා<br>
+                              පුඤ්ඤං තං අනුමොදිත්වා &#8211;<br>චිරං රක්ඛන්තු දෙසනං
                            </p>
                            <p>   
-                              ආකාසට්ඨා ච භුම්මට්ඨා –<br>දෙවා නාගා මහිධිකා<br>
-                              පුඤ්ඤං තං අනුමොදිත්වා –<br>චිරං රක්ඛන්තු මංපරං
+                              ආකාසට්ඨා ච භුම්මට්ඨා &#8211;<br>දෙවා නාගා මහිධිකා<br>
+                              පුඤ්ඤං තං අනුමොදිත්වා &#8211;<br>චිරං රක්ඛන්තු මංපරං
                            </p>
                         </div>
                      </li>
@@ -323,7 +336,7 @@
                         <a href="#">ඥාතීන්ට පින්දීම<span class="st-arrow">Open or Close</span></a>
                         <div class="st-content">
                            <p>ඉදං මේ ඥාතීනං හෝතූ<br>
-                              සුඛිතා හෝන්තු ඥාතයෝ ///
+                              සුඛිතා හෝන්තු ඥාතයෝ &sol;&sol;&sol;
                            </p>
                         </div>
                      </li>
@@ -335,10 +348,10 @@
                               වීතෝ භවතු ලෝකෝ ච<br>
                               රාජා භවතු ධම්මිකෝ
                            </p>
-                           <p>ඉමිනා පුඤ්ඤකම්මෙන –<br>මා මෙ බාලසමාගමෝ<br>
-                              සතං සමාගමො හොතු –<br>යාව නිබ්බාණ පිත්තියා
+                           <p>ඉමිනා පුඤ්ඤකම්මෙන &#8211;<br>මා මෙ බාලසමාගමෝ<br>
+                              සතං සමාගමො හොතු &#8211;<br>යාව නිබ්බාණ පිත්තියා
                            </p>
-                           <p>සබ්බ දුක්ඛා පමුච්චතු ///</p>
+                           <p>සබ්බ දුක්ඛා පමුච්චතු &sol;&sol;&sol;</p>
                         </div>
                      </li>
                   </ul>
@@ -353,10 +366,10 @@
                      <li>
                         <a href="#">දේවතා ආරාධනාව<span class="st-arrow">Open or Close</span></a>
                         <div class="st-content">
-                           <p>&ldquo;සමන්තා චක්ක වාලේසු &#8211;<br>අත්‍රා ගච්ඡන්තු දේවතා<br>
+                           <p>සමන්තා චක්ක වාලේසු &#8211;<br>අත්‍රා ගච්ඡන්තු දේවතා<br>
                               සද්ධම්මං මුනි රාජස්ස &#8211;<br>සුණන්තූ සග්ග මොක්ඛදං<p>
                            <p>    
-                              පරිත්තස්සවණ කාලෝ &#8211;<br>අයං භදන්තා ///<p>
+                              පරිත්තස්සවණ කාලෝ &#8211;<br>අයං භදන්තා &sol;&sol;&sol;<p>
                               <!-- පරිත්තස්සවණ කාලෝ &#8211;<br>අයං භදන්තා<br> -->
                               <!-- පරිත්තස්සවණ කාලෝ &#8211;<br>අයං භදන්තා</p> -->
                               <!-- පරිත්ත ධම්මස්සවණ කාලෝ &#8211; අයං භදන්තා&rdquo;</p> -->
@@ -407,56 +420,56 @@
                      <li>
                         <a href="#">රතන සූත්‍රය<span class="st-arrow">Open or Close</span></a>
                         <div class="st-content">
-                           <p>1.  යානීධ භූතානි සමාගතානි<br>
+                           <p>1. යානීධ භූතානි සමාගතානි<br>
                               භුම්මානි වායා නිව අන්තලික්ඛේ<br>
                               සබ්බේව භූතා සුමනා භවන්තු<br>
                               අථෝපි සක්කච්ච සුණන්තු භාසිතං
                            </p>
-                           <p>2.  තස්මා හි භූතා නිසාමේථ සබ්බේ<br>
+                           <p>2. තස්මා හි භූතා නිසාමේථ සබ්බේ<br>
                               මෙත්තං කරෝථ මානුසියා පජාය<br>
                               දිවා ච රත්ථෝ ච හරන්ති යේ බලිං<br>
                               තස්මා හි නේ රක්ඛථ අප්පමත්තා
                            </p>
-                           <p>3.  යං කිඤ්චි විත්තං ඉධ වා හුරං වා<br>
+                           <p>3. යං කිඤ්චි විත්තං ඉධ වා හුරං වා<br>
                               සග්ගේසු වා යං රතනං පණීතං<br>
                               න නෝ සමං අත්ථි තථාගතේන<br>
                               ඉදම්පි බුද්ධේ රතනං පණීතං  <br> 
                               ඒතේන සච්චේන සුවත්ථි හෝතු
                            </p>
-                           <p>4.  ඛයං විරාගං අමතං පණීතං<br>
+                           <p>4. ඛයං විරාගං අමතං පණීතං<br>
                               යදජ්ඣගා සක්‍යමුනී සමාහිතෝ<br>
                               න තේන ධම්මේන සමත්ථි කිඤ්චි<br>
                               ඉදම්පි ධම්මේ රතනං පණීතං<br>
                               ඒතේන සච්චේන සුවත්ථි හෝතු
                            </p>
-                           <p>5.  යං බුද්ධසෙට්ඨෝ පරිවණ්ණයී සුචිං<br>
+                           <p>5. යං බුද්ධසෙට්ඨෝ පරිවණ්ණයී සුචිං<br>
                               සමාධිමානන්තරිකඤ්ඤමාහු<br>
                               සමාධිනා තේන සමෝ න විජ්ජති<br>
                               ඉදම්පි ධම්මේ රතනං පණීතං<br>
                               ඒතේන සච්චේන සුවත්ථි හෝතු
                            </p>
-                           <p>6.  යේ පුග්ගලා අට්ඨ සතං පසත්ථා<br>
+                           <p>6. යේ පුග්ගලා අට්ඨ සතං පසත්ථා<br>
                               චත්තාරි ඒතානි යුගානි හොන්ති<br>
                               තේ දක්ඛිණෙය්‍යා සුගතස්ස සාවකා<br>
                               ඒතේසු දින්නානි මහප්ඵලානි<br>
                               ඉධම්පි සංඝේ රතනං පණීතං<br>
                               ඒතේන සච්චේන සුවත්ථි හෝතු
                            </p>
-                           <p>7.  යේ සුප්පයුත්තා මනසා දළ්හේන<br>
+                           <p>7. යේ සුප්පයුත්තා මනසා දළ්හේන<br>
                               නික්කාමිනෝ ගෝතමසාසනම්හි<br>
                               තේ පත්තිපත්තා අමතං විගය්හ<br>
                               ලද්ධා මුධා නිබ්බුතිං භුඤ්ජමානා<br>
                               ඉදම්පි සංඝේ රතනං පණීතං<br>
                               ඒතේන සච්චේන සුවත්ථි හෝතු
                            </p>
-                           <p>8.  යථින්දඛීලෝ පඨවිංසිතෝසියා<br>
+                           <p>8. යථින්දඛීලෝ පඨවිංසිතෝසියා<br>
                               චතුබ්භි වාතේභි අසම්පකම්පියෝ<br>
                               තථූපමං සප්පුරිසං වදාමි<br>
                               යෝ අරියසච්චානි අවෙච්ච පස්සති<br>
                               ඉදම්පි සංඝේ රතනං පණීතං<br>
                               ඒතේන සච්චේන සුවත්ථි හෝතු
                            </p>
-                           <p>9.  යේ අරිය සච්චානි විභාවයන්ති<br>
+                           <p>9. යේ අරිය සච්චානි විභාවයන්ති<br>
                               ගම්භීරපඤ්ඤේන සුදේසිතානි<br>
                               කිඤ්චාපි තේ හොන්ති භුසප්පමත්තා<br>
                               න තේ භවං අට්ඨමං ආදියන්ති<br>
@@ -573,48 +586,48 @@
                      <li>
                         <a href="#">ජය පිරිත<span class="st-arrow">Open or Close</span></a>
                         <div class="st-content">
-                           <p>සිරිධිතිමති තේජෝ ජයසිද්ධි මහිද්ධි මහාගුණං අපරිමිත පුඤ්ඤාධිකාරස්ස සබ්බන්තරාය නිවාරණ සමත්ථස්ස භගවතෝ අරහතෝ සම්මා සම්බුද්ධස්ස-</p>
-                           <p>ද්වත්තිංස මහාපුරිස ලක්ඛණානුභාවේන, අසීත්‍යනු ව්‍යඤ්ජන ලක්ඛණානුභාවෙන, අට්ඨුත්තරසත මංගල ලක්ඛණානුභාවෙන, ඡබ්බණ්ණ රංස්‍යානුභාවේන, කේතුමාලානුභාවෙන, දස පාරමිතානුභාවේන, දස උපපාරමිතානුභාවේන, දස පරමත්ථ පාරමිතානුභාවේන, සීලසමාධි පඤ්ඤානුභාවේන, බුද්ධානුභාවේන, ධම්මානුභාවේන, සංඝානුභාවේන, තේජානුභාවේන, ඉද්ධ්‍යානුභාවේන, බලානුභාවේන, ඤෙය්‍යධම්මානුභාවේන, චතුරාසීති සහස්ස ධම්මක්ඛන්ධානුභාවේන, නවලෝකුත්තර ධම්මානුභාවේන, අට්ඨංගික-මග්ගානුභාවේන, අට්ඨසමා-පත්‍යානුභාවේන. ඡළභිඤ්ඤානු-භාවේන, මෙත්තා-කරුණා-මුදිතා-උපෙක්ඛානුභාවේන, සබ්බපාරමිතා-නුභාවේන රතනත්තය සරණානුභාවේන (මය්හං) තුය්හං සබ්බ රෝග සෝක උපද්දව දුක්ඛ දෝමනස්සුපායාසා විනස්සන්තු, සබ්බ සංකප්පා තුය්හං සමිජ්ඣන්තු, සතවස්සජීවේන සමංගිකො හෝතු සබ්බදා.</p>
-                           <p>  ආකාස පබ්බත වන භූමි තටාක ගංගා මහාසමුද්ද ආරක්ඛ දේවතා සදා තුම්හේ අනුරක්ඛන්තු. සබ්බබුද්ධානුභාවේන, සබ්බධම්මානු-භාවේන, සබ්බසංඝානුභාවේන, බුද්ධරතනං, ධම්මරතනං, සංඝරතනං, තින්නං රතනානං ආනුභාවේන, චතුරාසීති සහස්ස ධම්මක්ඛන්ධානු-භාවේන, පිටකත්තයානුභාවේන, ජිනසාවකානුභාවේන, සබ්බේ තේ රෝගා, සබ්බේ තෙ භයා, සබ්බේ තෙ අන්තරායා, සබ්බේ තේ උපද්දවා සබ්බේ තේ දුන්නිමිත්තා සබ්බේ තේ අවමංගලා විනස්සන්තු:- ආයුවඩ්ඪකෝ, ධනවඩ්ඪකෝ, සිරිවඩ්ඪකෝ, යසවඩ්ඪකෝ, බලවඩ්ඪකෝ, වණ්ණවඩ්ඪකෝ, සුඛවඩ්ඪකෝ හෝතු සබ්බදා,</p>
+                           <p>සිරිධිතිමති තේජෝ ජයසිද්ධි මහිද්ධි මහාගුණං අපරිමිත පුඤ්ඤාධිකාරස්ස සබ්බන්තරාය නිවාරණ සමත්ථස්ස භගවතෝ අරහතෝ සම්මා සම්බුද්ධස්ස&#8208;</p>
+                           <p>ද්වත්තිංස මහාපුරිස ලක්ඛණානුභාවේන, අසීත්‍යනු ව්‍යඤ්ජන ලක්ඛණානුභාවෙන, අට්ඨුත්තරසත මංගල ලක්ඛණානුභාවෙන, ඡබ්බණ්ණ රංස්‍යානුභාවේන, කේතුමාලානුභාවෙන, දස පාරමිතානුභාවේන, දස උපපාරමිතානුභාවේන, දස පරමත්ථ පාරමිතානුභාවේන, සීලසමාධි පඤ්ඤානුභාවේන, බුද්ධානුභාවේන, ධම්මානුභාවේන, සංඝානුභාවේන, තේජානුභාවේන, ඉද්ධ්‍යානුභාවේන, බලානුභාවේන, ඤෙය්‍යධම්මානුභාවේන, චතුරාසීති සහස්ස ධම්මක්ඛන්ධානුභාවේන, නවලෝකුත්තර ධම්මානුභාවේන, අට්ඨංගික&#8208;මග්ගානුභාවේන, අට්ඨසමා&#8208;පත්‍යානුභාවේන. ඡළභිඤ්ඤානු&#8208;භාවේන, මෙත්තා&#8208;කරුණා&#8208;මුදිතා&#8208;උපෙක්ඛානුභාවේන, සබ්බපාරමිතා&#8208;නුභාවේන රතනත්තය සරණානුභාවේන &lpar;මය්හං&rpar; තුය්හං සබ්බ රෝග සෝක උපද්දව දුක්ඛ දෝමනස්සුපායාසා විනස්සන්තු, සබ්බ සංකප්පා තුය්හං සමිජ්ඣන්තු, සතවස්සජීවේන සමංගිකො හෝතු සබ්බදා.</p>
+                           <p>  ආකාස පබ්බත වන භූමි තටාක ගංගා මහාසමුද්ද ආරක්ඛ දේවතා සදා තුම්හේ අනුරක්ඛන්තු. සබ්බබුද්ධානුභාවේන, සබ්බධම්මානු&#8208;භාවේන, සබ්බසංඝානුභාවේන, බුද්ධරතනං, ධම්මරතනං, සංඝරතනං, තින්නං රතනානං ආනුභාවේන, චතුරාසීති සහස්ස ධම්මක්ඛන්ධානු&#8208;භාවේන, පිටකත්තයානුභාවේන, ජිනසාවකානුභාවේන, සබ්බේ තේ රෝගා, සබ්බේ තෙ භයා, සබ්බේ තෙ අන්තරායා, සබ්බේ තේ උපද්දවා සබ්බේ තේ දුන්නිමිත්තා සබ්බේ තේ අවමංගලා විනස්සන්තු:- ආයුවඩ්ඪකෝ, ධනවඩ්ඪකෝ, සිරිවඩ්ඪකෝ, යසවඩ්ඪකෝ, බලවඩ්ඪකෝ, වණ්ණවඩ්ඪකෝ, සුඛවඩ්ඪකෝ හෝතු සබ්බදා,</p>
                            <p>
-                              දුක්ඛ රෝග භයා වේරා -<br>සෝකාසන්තතු පද්දවා<br>
-                              අනේකා අන්තරායා පි -<br>විනස්සන්තු ච තේජසා<br>
-                              ජය සිද්ධි ධනං ලාභං -<br>සොත්ථි භාග්‍යං සුඛං බලං<br>
-                              සිරි ආයු ච වණ්ණෝ ච -<br>භෝගං වුද්ධි ච යසවා<br>
-                              සත්වස්සා ච ආයූ ච -<br>ජීවසිද්ධි භවන්තු තෙ.
+                              දුක්ඛ රෝග භයා වේරා &#8208;<br>සෝකාසන්තතු පද්දවා<br>
+                              අනේකා අන්තරායා පි &#8208;<br>විනස්සන්තු ච තේජසා<br>
+                              ජය සිද්ධි ධනං ලාභං &#8208;<br>සොත්ථි භාග්‍යං සුඛං බලං<br>
+                              සිරි ආයු ච වණ්ණෝ ච &#8208;<br>භෝගං වුද්ධි ච යසවා<br>
+                              සත්වස්සා ච ආයූ ච &#8208;<br>ජීවසිද්ධි භවන්තු තෙ.
                            </p>
                         </div>
                      </li>
                      <li>
                         <a href="#">අටවිසි පිරිත<span class="st-arrow">Open or Close</span></a>
                         <div class="st-content">
-                           <p>තණ්හංකරෝ මහා වීරෝ -<br>මේධංකරෝ මහායසෝ<br>
-                           සරණංකරො ලෝකහිතෝ -<br>දීපංකරෝ ජුතින්ධරෝ</p>
+                           <p>තණ්හංකරෝ මහා වීරෝ &#8208;<br>මේධංකරෝ මහායසෝ<br>
+                           සරණංකරො ලෝකහිතෝ &#8208;<br>දීපංකරෝ ජුතින්ධරෝ</p>
 
-                           <p>කොණ්ඩඤ්ඤෝ ජනපාමොක්ක්ඛෝ -<br>මංගලො පුරිසාසභෝ<br>
-                           සුමනො සුමනො ධීරෝ -<br>රෙවතෝ අරති වද්ධනෝ</p>
+                           <p>කොණ්ඩඤ්ඤෝ ජනපාමොක්ක්ඛෝ &#8208;<br>මංගලො පුරිසාසභෝ<br>
+                           සුමනො සුමනො ධීරෝ &#8208;<br>රෙවතෝ අරති වද්ධනෝ</p>
 
-                           <p>සොභිතෝ ගුණසම්පන්නෝ -<br>අනෝමදස්සි ජනුත්තමෝ<br>
-                           පදුමො ලෝකපජ්ජොතෝ -<br>නාරදො වරසාරථි</p>
+                           <p>සොභිතෝ ගුණසම්පන්නෝ &#8208;<br>අනෝමදස්සි ජනුත්තමෝ<br>
+                           පදුමො ලෝකපජ්ජොතෝ &#8208;<br>නාරදො වරසාරථි</p>
 
-                           <p>පදුමුත්තරො සත්තසාරෝ -<br>සුමේධො අග්ගපුග්ගලෝ<br>
-                           සුජාතෝ සබ්බලෝකග්ගෝ -<br>පියදස්සී නාරාසභෝ</p>
+                           <p>පදුමුත්තරො සත්තසාරෝ &#8208;<br>සුමේධො අග්ගපුග්ගලෝ<br>
+                           සුජාතෝ සබ්බලෝකග්ගෝ &#8208;<br>පියදස්සී නාරාසභෝ</p>
 
-                           <p>අත්ථදස්සී කාරුණිකෝ -<br>ධම්මදස්සී තමෝනුදෝ<br>
-                           සිද්ධත්ථා අසමෝ ලෝකේ -<br>තිස්සො වරදසංවරෝ</p>
+                           <p>අත්ථදස්සී කාරුණිකෝ &#8208;<br>ධම්මදස්සී තමෝනුදෝ<br>
+                           සිද්ධත්ථා අසමෝ ලෝකේ &#8208;<br>තිස්සො වරදසංවරෝ</p>
 
-                           <p>ඵුස්සො වරද සම්බුද්ධෝ -<br>විපස්සී ච අනූපමෝ<br>
-                           සිඛී සබ්බහිතෝ සත්ථා -<br>වෙස්සභූ සුඛ දායකෝ</p>
+                           <p>ඵුස්සො වරද සම්බුද්ධෝ &#8208;<br>විපස්සී ච අනූපමෝ<br>
+                           සිඛී සබ්බහිතෝ සත්ථා &#8208;<br>වෙස්සභූ සුඛ දායකෝ</p>
 
-                           <p>කකුසන්ධො සත්ථවාහෝ -<br>කොණාගමනො රණංජහෝ<br>
-                           කස්සපො සිරි සම්පන්නෝ -<br>ගෝතමෝ සක්‍යපුංගවෝ</p>
+                           <p>කකුසන්ධො සත්ථවාහෝ &#8208;<br>කොණාගමනො රණංජහෝ<br>
+                           කස්සපො සිරි සම්පන්නෝ &#8208;<br>ගෝතමෝ සක්‍යපුංගවෝ</p>
 
-                           <p>තෙසං සච්චේන සීලේන -<br>ඛන්ති මෙත්තා බලේන ච<br>
-                           තෙපි මං අනුරක්ඛන්තු -<br>ආරෝග්‍යේන සුඛෙන චාති</p>
+                           <p>තෙසං සච්චේන සීලේන &#8208;<br>ඛන්ති මෙත්තා බලේන ච<br>
+                           තෙපි මං අනුරක්ඛන්තු &#8208;<br>ආරෝග්‍යේන සුඛෙන චාති</p>
 
-                           <p>අට්ඨවීසතිමෙ බුද්ධා -<br>පූරෙත්වා දස පාරමී<br>
-                           ජෙත්වා මාරාරි සංගමං -<br>බුද්ධත්තං සමුපගමුං<br>
-                           ඒතේන සච්චවජ්ජේන -<br>හොතු මෙ ජය මංගලං</p>
+                           <p>අට්ඨවීසතිමෙ බුද්ධා &#8208;<br>පූරෙත්වා දස පාරමී<br>
+                           ජෙත්වා මාරාරි සංගමං &#8208;<br>බුද්ධත්තං සමුපගමුං<br>
+                           ඒතේන සච්චවජ්ජේන &#8208;<br>හොතු මෙ ජය මංගලං</p>
                         </div>
                      </li>
                   </ul>
@@ -629,19 +642,22 @@
             <p>ධර්මය සහ විනය සමග අධර්මය සහ අවිනය මිශ්‍ර වීම චතුරාර්ය සත්‍යය අවබෝධ කිරීමට බාධා ඇති කරයි. පැවිදි සහ ගිහි නොයෙක් ධර්ම දේශකයින් පවසනා කරුණු ත්‍රිපිටක ධර්මය සහ විනය සමග සැසදීමට පසුබිමක් ඇති කිරීම තුලින් ධර්මය සහ විනය යනු කවරේද යන්නත්, අධර්මය සහ අවිනය යනු කවරේද යන්නත්, ත්‍රිපිටකයේ සඳහන් ධර්මය සහ විනය දොස් සහිතද, නැතහොත් දොස් රහිතද, චතුරාර්ය සත්‍යය අවබෝධ කිරීම පිණිස කෙතෙක් දුරට ත්‍රිපිටකය උපකාර කරගත හැකිද යන්නත් යන අවබෝධයන් බොහෝ දෙනා තුල ඇති කිරීම මෙම වෙබ් අඩවිය ආරම්භ කිරීමේ එක් අරමුණකි.</p>
          </div>
       </section>
-      <footer class="footer" id="contact">
+   </main>
+
+      <footer role="contentinfo" class="footer" id="contact">
          <div class="footer-content">
-            <h2 class="heading-2 mb-md"><a href="#about">රැඳී සිටින්න ධර්ම සමඟින්!</a></h2>
+            <h2 class="heading-2 mb-md"><a href="#about">රැඳී සිටින්න ධර්ම සමඟින්&excl;</a></h2>
          
             <p>බුදුරජාණන්වහන්සේ වදාල ලෝකෝත්තර අර්ථ දැක්වෙන ශුන්‍යතා ධර්මය පැවසෙන ශ්‍රී මුඛ බුද්ධ දේශනාව බොහෝ කලක් ලොව බැබලීම පිණිස මෙම වෙබ් අඩවිය උපකාරයක් වේවායි අපගේ ප්‍රාර්ථනය යි&excl;</p>
             <p class="social">
-               <a href="https://www.facebook.com/" target="_blank" class="btn btn-social-icon btn-facebook"><i class="fab fa-facebook-f"></i></a>
-               <a href="https://twitter.com/" target="_blank" class="btn btn-social-icon btn-twitter"><i class="fab fa-twitter"></i></a>
-               <a href="https://youtube.com/" target="_blank" class="btn btn-social-icon btn-youtube"><i class="fab fa-youtube"></i></a>
-               <a href="https://instagram.com/" target="_blank" class="btn btn-social-icon btn-instagram"><i class="fab fa-instagram"></i></a>
+               <a href="https://www.facebook.com/" target="_blank" rel="noopener" rel="noreferrer" class="btn btn-social-icon btn-facebook"><!--<i class="fab fa-facebook-f"></i> --><svg class="ffa fa-facebook-f"> <use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a>
+               <a href="https://twitter.com/" target="_blank" class="btn btn-social-icon btn-twitter"><!--<i class="fab fa-twitter"></i>--><svg class="ffa fa-twitter"> <use xlink:href="img/sprite.svg#icon-twitter"></use></svg></a>
+               <a href="https://youtube.com/" target="_blank" class="btn btn-social-icon btn-youtube"><!--<i class="fab fa-youtube"></i>--><svg class="ffa fa-youtube"> <use xlink:href="img/sprite.svg#icon-youtube"></use></svg></a>
+               <a href="https://instagram.com/" target="_blank" class="btn btn-social-icon btn-instagram"><!--<i class="fab fa-instagram"></i>--><svg class="ffa fa-instagram"> <use xlink:href="img/sprite.svg#icon-instagram"></use></svg></a>
+               <a href="https://instagram.com/" target="_blank" class="btn btn-social-icon btn-pinterest"><!--<i class="fab fa-instagram"></i>--><svg class="ffa fa-pinterest"> <use xlink:href="img/sprite.svg#icon-pinterest"></use></svg></a>
             </p>
-            <p>&tilde; සබ්බ දානං ධම්ම දානං ජිනාති &tilde;<br>(සියලු දානයන් පරදා ධර්ම දානය ජයගනී)</p>
-            <p class="copy-credit">Designed & Hosting by ROSHAN BANDARA </p>
+            <p>&tilde; සබ්බ දානං ධම්ම දානං ජිනාති &tilde;<br>&lpar;සියලු දානයන් පරදා ධර්ම දානය ජයගනී&rpar;</p>
+            <p class="copy-credit">Designed &amp; Hosting by ROSHAN BANDARA </p>
             <p class="copy-credit">
                Copyright &copy; 2019 ධර්ම. All rights reserved.
             </p>
@@ -656,6 +672,9 @@
               <!-- <input type="range" id="range" min="1.0" max="3.0" step="0.1" value="2.0" /> -->
 
             <!-- </ul> --> 
+           
+              
+            </svg>
                
       </footer>
       <noscript>
